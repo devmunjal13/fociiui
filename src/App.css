@@ -1,0 +1,22 @@
+
+
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #1A1C2D;
+  }
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background-color: #161926;
+  }
+
+.pass-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.error {
+  font-size: 13px;
+  color:red;
+  margin:0px 0px 0px 0px;
+}
