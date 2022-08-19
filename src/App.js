@@ -1,7 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Home from "./pages/home/Home";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  HashRouter,
+  Route,
+  Routes,
+} from "react-router-dom";
 import Profile from "./pages/profile/Profile";
 import Payment from "./pages/payment/Payment";
 import Login from "./pages/auth/login";
@@ -24,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Router>
+      <HashRouter>
         <Routes>
           <Route path="/*" element={<User />} />
           <Route exact path="/login" element={<Login />} />
@@ -56,7 +61,7 @@ function App() {
             }
           />
         </Routes>
-      </Router>
+      </HashRouter>
       <Footer />
     </div>
   );
